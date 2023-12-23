@@ -44,7 +44,7 @@ const ConversationBox: React.FC<ConversationBoxProps> = ({
 
         const seenArray = lastMessage.seen || []
 
-        if(userEmail)
+        if(!userEmail)
         return false
 
         return seenArray
@@ -90,7 +90,7 @@ const ConversationBox: React.FC<ConversationBoxProps> = ({
 
             <div className="min-w-0 flex-1">
                 <div className="focus:outline-none">
-                    <div className="flex justify-betweem items-center mb-1">
+                    <div className="flex justify-between items-center mb-1">
                         <p className="text-md font-medium text-gray-900">
                             {data.name || otherUser.name}
                         </p>
